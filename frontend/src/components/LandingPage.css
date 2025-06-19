@@ -1,0 +1,287 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #0e1117;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  color: #4cafb2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ana kapsayıcı */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header / Navbar */
+.landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1e27;
+  padding: 10px 20px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: #4cafb2;
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.navbar ul li a:hover {
+  color: #fff;
+}
+
+/* Hero Bölümü */
+.hero-section {
+  height: 650px;
+  display: flex;
+  padding: 40px 20px;
+  gap: 40px;
+  background: linear-gradient(145deg, #141822, #1a1e27 60%);
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  margin: 0 0 15px;
+  color: #4cafb2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background-color: #4cafb2;
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background-color: #3fa299;
+}
+
+/* Piyasalar Bölümü (Sağ) */
+.markets-sidebar {
+  width: 300px;
+  background-color: #1a1e27;
+  border-radius: 8px;
+  padding: 20px;
+  align-self: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.markets-sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #4cafb2;
+}
+
+.search-bar {
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2b2f38;
+  color: #fff;
+  outline: none;
+}
+
+.market-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.market-item {
+  display: flex;
+  margin-bottom: 8px;
+  background-color: #141822;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.market-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Özellikler Bölümü */
+.features-section {
+  background-color: #0e1117;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #4cafb2;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #1a1e27;
+  width: 250px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  min-height: 180px;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #4cafb2;
+}
+
+/* Teknolojiler Bölümü */
+.technology-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #141822;
+}
+
+.technology-section h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #4cafb2;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  color: #fff;
+}
+
+.tech-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Hakkımızda Bölümü */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0e1117;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #4cafb2;
+}
+
+/* Footer */
+.landing-footer {
+  background-color: #1a1e27;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+/* —­­ CONTACT —­­ */
+.contact-section{
+  background:#141822;
+  padding:60px 20px;
+  text-align:center;
+}
+.contact-section h2{color:#4cafb2;margin-bottom:20px;font-size:1.8rem}
+.contact-section ul{list-style:none;padding:0;margin-top:15px}
+.contact-section li{margin:6px 0;color:#ddd}
+.contact-section a{color:#4cafb2}
+ /* SEARCH input düzeltmesi */
+.search-bar { margin-bottom: 15px; }
+.search-input,
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2b2f38;
+  color: #fff;
+  outline: none;
+}
+
+/* ––– İletişim bölümü ––– */
+.contact-section{
+  background:#141822;
+  padding:60px 20px;
+  text-align:center;
+}
+.contact-section h2{color:#4cafb2;margin-bottom:20px;font-size:1.8rem}
+.contact-section ul{list-style:none;padding:0;margin-top:15px}
+.contact-section li{margin:6px 0;color:#ddd}
+.contact-section a{color:#4cafb2}
