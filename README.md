@@ -1,63 +1,72 @@
-````markdown
+Aşağıdaki satırları ***hiçbir ekstra \`\`\` kod bloğu eklemeden*** doğrudan `README.md` dosyana yapıştır – GitHub otomatik olarak düzgün biçimde işleyecektir:
+
 <div align="center">
 
-# 📊 Finansal Analiz Uygulaması  
+# 📊 Finansal Analiz Uygulaması
+
 <sup>Bandırma Onyedi Eylül Üniversitesi – Bilgisayar Mühendisliği Bitirme Projesi (2025)</sup>
+
 </div>
 
 ---
 
 ## İçindekiler
-- [Proje Hakkında](#proje-hakkında)
-- [Ekran Görüntüleri](#ekran-görüntüleri)
-- [Özellikler](#özellikler)
-- [Mimari](#mimari)
-- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
-- [API Uç Noktaları](#api-uç-noktaları)
-- [Yol Haritası](#yol-haritası)
-- [Katkıda Bulunanlar](#katkıda-bulunanlar)
+
+* [Proje Hakkında](#proje-hakkında)
+* [Ekran Görüntüleri](#ekran-görüntüleri)
+* [Özellikler](#özellikler)
+* [Mimari](#mimari)
+* [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+* [API Uç Noktaları](#api-uç-noktaları)
+* [Yol Haritası](#yol-haritası)
+* [Katkıda Bulunanlar](#katkıda-bulunanlar)
 
 ---
 
 ## Proje Hakkında
+
 **Finansal Analiz Uygulaması**, kişisel finans yönetimi ile temel yatırım analizini tek bir platformda birleştiren açık kaynaklı bir web uygulamasıdır.
 
 Kullanıcılar:
-1. **Gelir–gider** kalemlerini kaydederek bütçelerini takip eder.  
-2. **Finnhub** üzerinden gerçek zamanlı hisse verisi sorgular.  
-3. Basit bir **Decision Tree** modeli ile “yarın yükselir / düşer” öngörüsü alır.  
 
-> **Takım Üyeleri**  
-> • Hasancan Eser • Davut Kırtak  
+1. **Gelir–gider** kalemlerini kaydederek bütçelerini takip eder.
+2. **Finnhub** üzerinden gerçek zamanlı hisse verisi sorgular.
+3. Basit bir **Decision Tree** modeli ile “yarın yükselir / düşer” öngörüsü alır.
+
+> **Takım Üyeleri**
+> • Hasancan Eser   • Davut Kırtak
 > **Danışman** Doç. Dr. Mehmet Akif Çiftçi
 
 ---
 
 ## Ekran Görüntüleri
-| Landing | Dashboard | Market Detail |
-|---------|-----------|---------------|
+
+| Landing                      | Dashboard                        | Market Detail              |
+| ---------------------------- | -------------------------------- | -------------------------- |
 | ![Landing](docs/landing.png) | ![Dashboard](docs/dashboard.png) | ![Market](docs/market.png) |
 
 ---
 
 ## Özellikler
-- 🔑 JWT tabanlı kimlik doğrulama  
-- 📈 Gelir / gider grafikleri (Recharts)  
-- 🌐 Finnhub sembol arama + canlı fiyat  
-- 🤖 `DecisionTreeClassifier` ile fiyat yönü tahmini  
-- 🗃️ PostgreSQL üzerinde kategori, işlem & portföy tabloları  
+
+* 🔑 JWT tabanlı kimlik doğrulama
+* 📈 Gelir / gider grafikleri (Recharts)
+* 🌐 Finnhub sembol arama + canlı fiyat
+* 🤖 `DecisionTreeClassifier` ile fiyat yönü tahmini
+* 🗃️ PostgreSQL üzerinde kategori, işlem & portföy tabloları
 
 ---
 
 ## Mimari
+
 ```text
 ┌────────────┐       REST        ┌──────────────┐        SQL         ┌────────────┐
 |  React UI  | ───────────────▶ |  Flask  API  | ────────────────▶  | PostgreSQL |
 └────────────┘                  └──────────────┘                     └────────────┘
         ▲                              │
-        │   Websocket (dev hot-reload) ▼
+        │  Websocket (dev hot-reload)  ▼
         └──────── Finnhub + ML  ◀─────┘
-````
+```
 
 ---
 
@@ -65,12 +74,11 @@ Kullanıcılar:
 
 | Katman          | Teknoloji                                 |
 | --------------- | ----------------------------------------- |
-| **Frontend**    | React 18, React-Router v6  |
+| **Frontend**    | React 18, React-Router v6                 |
 | **Backend**     | Flask 2.x, Flask-JWT-Extended, Flask-CORS |
 | **Veritabanı**  | PostgreSQL 15, SQLAlchemy ORM             |
 | **Makine Öğr.** | Scikit-Learn, Pandas, yfinance            |
-| **3rd Party**   | Finnhub API, News API (ops.)              |
-
+| **3rd Party**   | Finnhub API, News API (opsiyonel)         |
 
 ---
 
@@ -86,7 +94,6 @@ Kullanıcılar:
 | GET   | `/api/predict/<symbol>`     | Hisse fiyat yönü tahmini  |
 
 ---
-
 
 ## Yol Haritası
 
@@ -105,4 +112,6 @@ Kullanıcılar:
 | **ML & Back-End**  | Davut Kırtak                |
 | **Danışman**       | Doç. Dr. Mehmet Akif Çiftçi |
 
+---
 
+<!-- README sonu -->
