@@ -17,7 +17,6 @@ sia = SentimentIntensityAnalyzer()
 
 START_DATE = "2009-02-14"
 END_DATE   = "2020-06-12"
-NEWS_KEY   = "4656311750dd4e31b7c395067cc397ce"   # kendi NewsAPI anahtarın
 LOOKBACK   = 3
 SENT_THR   = 0.05
 
